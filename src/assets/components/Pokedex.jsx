@@ -24,6 +24,13 @@ const Pokedex = () => {
             </figure>
             <h2>Welcome { trainer }, here you can find your favorite pokemon!!!</h2>
 
+            <div className='search-box'>
+                <div>
+                    <input type="text" />
+                    <button>Go</button> 
+                </div>
+            </div>
+
             <ul className='pokelist'>
                 {
                     pokemons.map( pokemon => (

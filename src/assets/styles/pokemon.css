@@ -1,0 +1,88 @@
+.pokemon-card{
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 1280px;
+    min-width: 325px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pokemon-card header {
+    display: flex;
+    height: 15vh;
+    justify-content: left;
+}
+
+.pokemon-card header img {
+    object-fit: contain;
+    width:100%;
+    height:100%;
+}
+
+.main-card{
+    /* max-width: 1280px; */
+    height: 75vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    gap: 1rem;
+}
+
+.main-card * {
+    border-radius: 1rem;
+}
+
+.main-card img{
+    width: 15rem;
+    height: 15rem;
+}
+
+.main-card-detail {
+    width: 80%;
+    padding: 0.5rem;
+}
+
+.pokemon-image {
+    height: 10rem;
+    position: relative;
+}
+
+.main-card-detail img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -100px;
+    margin: 0 auto;
+}
+
+.measure-box{
+    display: flex;
+    justify-content:space-around;
+    background-color: white;
+}
+
+.ul-types {
+    display: flex;
+    justify-content: space-around;
+}
+
+.infopokemon-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+}
+
+.movements-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.movelist{
+    height: 100%;
+    overflow-y: auto;
+    background-color: white;
+}
