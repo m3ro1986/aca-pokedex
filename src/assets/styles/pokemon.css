@@ -24,11 +24,13 @@
 .main-card{
     /* max-width: 1280px; */
     height: 75vh;
+    max-height: 75vh;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     margin: 0 auto;
     padding: 4rem 1rem;
     gap: 1rem;
+    min-width: 300px;
 }
 
 .main-card * {
@@ -41,7 +43,9 @@
 }
 
 .main-card-detail {
-    width: 80%;
+    height: 55vh;
+    min-width: 200px;
+    width: 25rem;
     padding: 0.5rem;
 }
 
@@ -60,24 +64,32 @@
 
 .measure-box{
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-around;
     background-color: white;
 }
 
 .ul-types {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .infopokemon-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
+    flex-wrap: wrap;
     background-color: white;
+    justify-content: space-around;
 }
 
 .movements-box {
     display: flex;
     flex-direction: column;
+    padding: 0.5rem;
+    height: 55vh;
+    min-width: 200px;
     padding: 0.5rem;
 }
 
@@ -85,4 +97,10 @@
     height: 100%;
     overflow-y: auto;
     background-color: white;
+}
+
+.ul-types {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
