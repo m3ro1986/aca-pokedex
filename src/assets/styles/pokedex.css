@@ -28,6 +28,20 @@
     height:100%;
 }
 
+.pokedex-box select {
+    position: absolute;
+    width: 10rem;
+    right: 0;
+    top: 0;
+    margin: 2rem;
+    font-size: 1rem;
+    font-family: 'Sigmar One', cursive;
+    color: var(--blue);
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
 .pokelist {
     height: 80vh;
     display: flex;    

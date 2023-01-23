@@ -22,7 +22,7 @@ const Pokemon = () => {
             <div className='main-card' >
                 <div className='main-card-detail' style={ { backgroundColor: color } }>
                     <figure className='pokemon-image'>
-                        <img src={ pokemon.sprites.other.dream_world.front_default } alt="" /> 
+                        <img src={ pokemon.sprites?.other.dream_world.front_default } alt="" /> 
                     </figure>
                     <div>
                         <div className='measure-box'>
@@ -36,7 +36,7 @@ const Pokemon = () => {
                             <h3> Types</h3>
                             <ul className='ul-types'>
                                 {
-                                pokemon.types.map( type => (
+                                pokemon.types?.map( type => (
                                     <li>
                                         { type.type.name}
                                     </li>
@@ -48,7 +48,7 @@ const Pokemon = () => {
                             <h3> abilities </h3>
                             <ul className='ul-habilities'>
                                 {
-                                pokemon.abilities.map( ability => (
+                                pokemon.abilities?.map( ability => (
                                     <li>
                                         { ability.ability.name }
                                     </li>
@@ -62,7 +62,7 @@ const Pokemon = () => {
                     <h3>Movements</h3>
                     <ul className='movelist'>
                         {
-                            pokemon.moves.map( move => (
+                            pokemon.moves?.map( move => (
                                 <li>
                                     { move.move.name }
                                 </li>
